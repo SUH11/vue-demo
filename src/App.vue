@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <vuex-test></vuex-test>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -8,6 +9,7 @@
     <div>
       <router-view></router-view>
     </div>
+    
     <!-- <router-view></router-view> -->
     <!-- <test-form></test-form>
     <test-tree></test-tree> -->
@@ -17,11 +19,13 @@
 <script>
   import TestForm from './components/form';
   import TestTree from './components/tree/TestTree'
+  import VuexTest from './components/vuex';
 
   export default {
     components: {
       TestForm,
-      TestTree
+      TestTree,
+      VuexTest
     },
   }
 </script>
