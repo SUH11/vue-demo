@@ -1,12 +1,16 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
+    <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      <!-- <router-link to="/user/1">User</router-link> -->
     </div>
-    <router-view/> -->
-    <test-form></test-form>
-    <!-- <test-tree></test-tree> -->
+    <div>
+      <router-view></router-view>
+    </div>
+    <!-- <router-view></router-view> -->
+    <!-- <test-form></test-form>
+    <test-tree></test-tree> -->
 
   </div>
 </template>
