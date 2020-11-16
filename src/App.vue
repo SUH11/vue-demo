@@ -1,14 +1,15 @@
 <template>
   <div id="app">
-    <vuex-test></vuex-test>
+    <button @click="printSome()">print</button>
+    <!-- <vuex-test></vuex-test>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-      <!-- <router-link to="/user/1">User</router-link> -->
+      <router-link to="/user/1">User</router-link>
     </div>
     <div>
       <router-view></router-view>
-    </div>
+    </div> -->
     
     <!-- <router-view></router-view> -->
     <!-- <test-form></test-form>
@@ -27,6 +28,14 @@
       TestTree,
       VuexTest
     },
+    methods: {
+      printSome() {
+        let iframe = document.createElement('iframe')
+        document.body.appendChild(iframe)
+        iframe.contentWindow.document.write('<div>Document print....</div>')
+        iframe.contentWindow.print()
+      }
+    }
   }
 </script>
 
